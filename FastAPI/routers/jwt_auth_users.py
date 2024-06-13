@@ -11,7 +11,7 @@ ACCESS_TOKEN_DURATION = 1
 SECRET = "201d573bd7d1344d3a3bfce1550b69102fd11be3db6d379508b6cccc58ea230b"
 
 
-router = APIRouter()
+router = APIRouter(tags=["jwt_auth_users"])
 
 
 oauth2 = OAuth2PasswordBearer(tokenUrl="login")
